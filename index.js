@@ -10,9 +10,11 @@ function printContainer(glowIndex = -1) {
       div.classList.add("glow");
       setTimeout(() => div.classList.remove("glow"), 1000);
     }
-    div.innerHTML = `<h3>Counter ${i + 1}</h3><h3>${
+    div.innerHTML = `<div class="main"><h3>Counter ${
+      i + 1
+    }</h3><span> <i class="fa fa-user"></i> ${
       line.length
-    }Customers</h3><ul class="line">${line
+    } Customers</span></div><ul class="line">${line
       .map((item) => `<li>${item} items</li>`)
       .join("")}</ul><h5>Total items: ${line.reduce((a, b) => a + b, 0)}</h5>`;
     container.appendChild(div);

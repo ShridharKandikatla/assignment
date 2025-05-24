@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Assignment</title>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1 class="header">Hypermart Checkout System</h1>
-    <h4 class="header">Real time queue management system</h4>
-    <div class="box">
-      <input
-        type="number"
-        id="count"
-        placeholder="Enter number of items"
-        min="1"
-      />
-      <button onclick="addCustomer()">Checkout Items</button>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Hypermart Checkout System</h1>
+        <p>Real time queue management system</p>
     </div>
-    <div class="container" id="itemContainer"></div>
+
+    <div class="box">
+        <input type="number" id="count" placeholder="Enter number of items" min="1" />
+        <button onclick="addCustomer()">Checkout Items</button>
+    </div>
+    <div class="container" id="itemContainer">
+
+    </div>
 
     <script src="index.js" />
-  </body>
+</body>
+
 </html>
